@@ -1,0 +1,222 @@
+body,html{
+    height: 100%;
+    font-family: 'fontedosite';
+    background-color: #f9dad8;
+    margin: 0;
+}
+@font-face {
+    font-family: 'fontedosite';
+    src: url(./fontes/Roboto-Bold.ttf);
+}
+#container-principal{
+
+    height: 100%;
+    width: 100%;
+    background-color: #f9dad8;
+}
+
+    /* cabeçalho */
+
+
+    #fixed-header{
+        height: 10%; 
+        width: 100%;
+        background-color: #F9EAD8;
+        display: flex;
+        position: fixed;
+        z-index: 1000;
+        top: 0;
+        left: 0;
+        box-shadow: 0 4px 8px #69686894;
+        border-bottom-left-radius: 10px;
+        border-bottom-right-radius: 10px;
+    }
+    
+    #logotipo {
+        height: 100%;
+        width: 30%;
+        display: flex;
+        align-items: center;
+    }
+    
+    #vazioesquerda {
+        height: 100%;
+        width: 40%; 
+    }
+    
+    #buttons {
+        height: 100%;
+        width: 50%; 
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+    }
+    .mudafundo{
+       padding: 2%;
+       background-color: #0E816C;
+       border-radius: 5px;
+       color: white;
+    }
+    
+    #vaziodireita {
+        height: 100%;
+        width: 5%; 
+    }
+    
+    .logo {
+        width: 90%;
+        height: 80%;
+        object-fit: cover;
+    }
+    
+    
+     #botao-topo {
+        width: 120px;
+        height: 40px;
+        color: white;
+        background-color: #0E816C;
+        border-radius: 5px;
+        border: 0;
+        font-size: 16px;
+        transition: transform 0.2s ease; /* Transição suave para a transformação */
+        cursor: pointer;
+    }
+        
+        #botao-topo:hover {
+            transform: scale(1.1); /* Aumenta em 10% quando hover */
+        }
+        a{
+            text-decoration: none;
+            color: black;
+            cursor: pointer;
+            padding: 2px;
+            
+        }
+    /* corpo do site */
+
+    #imagemfumante{
+        width: 60%;
+        height: 80%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding-left: 20%;
+        
+    }
+.fumante{
+    width: 60%;
+    height: 100%;
+}
+label{
+    font-size: 17px;
+}
+.hrfumante{
+    width: 90%;
+    border: 0;
+    border: 1px solid;
+    color: #0E816C;
+}
+
+#botao-topo-meio {
+    width: 160px;
+    height: 45px;
+    font-size: 14px;
+    color: white;
+    background-color: #0E816C;
+    border-radius: 5px;
+    border: 0;
+    transition: transform 0.2s ease; /* Transição suave para a transformação */
+}
+
+#botao-topo-meio:hover {
+    transform: scale(1.1); /* Aumenta em 10% quando hover */
+}
+#sobrenos{
+    width: 100%;
+    height: 70%;
+    background-color: #f9dad8;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+    padding-bottom: 50px;
+}
+pre{
+    font-family: 'fontetextosite';
+    font-size: 20px;
+    padding-bottom: 5px;
+}
+#divfooter{
+    width: 100%;
+    height: 10%;
+    color:  #0E816C;
+    font-size: 16px;
+    background-color: #f9dad8;
+}
+
+/* Barra de rolagem */
+
+::-webkit-scrollbar {
+    width: 10px;
+    height: 10px;
+    background-color: #f0f0f0;
+  }
+  
+  ::-webkit-scrollbar-thumb {
+    background-color: #0E816C;
+    border-radius: 5px;
+  }
+  
+  ::-webkit-scrollbar-thumb:hover {
+    background-color: #0E816C;
+  }
+  
+  ::-webkit-scrollbar-track {
+    background-color: #F9EAD8;
+  }
+
+/* Contate nos */
+
+#contato{
+    background-color: #0E816C;
+    width: 100%;
+    height: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    align-items: center;
+}
+
+.icons{
+    width: 50px;
+    height: 50px;
+}
+
+#divEndereco{
+    display: flex;
+    align-items: center;
+    color: white;
+}
+
+#divEmail{
+    display: flex;
+    align-items: center;
+    color: white;
+}
+
+#divTelefone{
+    display: flex;
+    align-items: center;
+    color: white;
+}
+
+.hrContato{
+    width: 90%;
+    border: 0;
+    border: 1px solid;
+    color: #F9EAD8;
+}
+.imgcontato{
+    
+    height: 10%;
+}

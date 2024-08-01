@@ -1,0 +1,307 @@
+body,html{
+    height: 100%;
+    font-family: 'fontedosite';
+    background-color: #f9dad8;
+    margin: 0;
+    overflow-x: hidden;
+}
+#container-principal{
+
+    height: 100%;
+    width: 100%;
+    background-color: #f9dad8;
+}
+@font-face {
+    font-family: 'fontedosite';
+    src: url(../Homepage/fontes/Roboto-Bold.ttf);
+}
+
+/* cabeçalho */
+
+
+#fixed-header{
+    height: 10%; 
+    width: 100%;
+    background-color: #F9EAD8;
+    display: flex;
+    position: fixed;
+    z-index: 1000;
+    top: 0;
+    left: 0;
+    box-shadow: 0 4px 8px #69686894;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+#logotipo {
+    height: 100%;
+    width: 30%;
+    display: flex;
+    align-items: center;
+}
+
+#vazioesquerda {
+    height: 100%;
+    width: 40%; 
+}
+
+#buttons {
+    height: 100%;
+    width: 50%; 
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.mudafundo{
+   padding: 2%;
+   background-color: #0E816C;
+   border-radius: 5px;
+   color: white;
+}
+
+#vaziodireita {
+    height: 100%;
+    width: 5%; 
+}
+
+.logo {
+    width: 90%;
+    height: 80%;
+    object-fit: cover;
+}
+    #botao-topo {
+    width: 120px;
+    height: 40px;
+    color: white;
+    background-color: #0E816C;
+    border-radius: 5px;
+    border: 0;
+    font-size: 16px;
+    transition: transform 0.2s ease; /* Transição suave para a transformação */
+}
+
+#botao-topo:hover {
+    transform: scale(1.1); /* Aumenta em 10% quando hover */
+}
+a{
+    text-decoration: none;
+    color: black;
+    
+}
+
+#espaco-vazio{
+    width: 100%;
+    height: 15%;
+}
+
+/*fim do cabeçalho e inicio do corpo do site*/
+
+#titulo{
+    width: 100%;
+    height: 30%;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    margin-bottom: 25px;
+}
+    .rotina-semanal{
+        width: 50%;
+        height: 80%;
+    }
+#mes{
+    width: 100%;
+    height: 10%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 10px;
+}
+#semana{
+    width: 100%;
+    height: 10%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#div-dias-topo{
+    width: 100%;
+    height: 20%;
+    display: flex;
+    align-items: center;
+    margin-top: 3px;
+    margin-left: 11%;
+}
+    #dias-topo{
+        width: 86.5%;
+        background-color: #f9dad8;
+        display: flex;
+        height: 100%;
+    }
+        #dia1{
+            height: 130px;
+            width: 160px;
+            background-color: rgb(243, 240, 240);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            justify-content: center;
+            align-items: center;
+        }
+        #dia2{
+            height: 130px;
+            width: 160px;
+            background-color: rgb(243, 240, 240);
+            margin-left: 10px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        #dia3{
+            height: 130px;
+            width: 160px;
+            background-color: rgb(243, 240, 240);
+            margin-left: 10px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        #dia4{
+            height: 130px;
+            width: 160px;
+            background-color: rgb(243, 240, 240);
+            margin-left: 10px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        #dia5{
+            height: 130px;
+            width: 160px;
+            background-color: rgb(243, 240, 240);
+            margin-left: 10px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        #dia6{
+            height: 130px;
+            width: 160px;
+            background-color: rgb(243, 240, 240);
+            margin-left: 10px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        #dia7{
+            height: 130px;
+            width: 160px;
+            background-color: rgb(243, 240, 240);
+            margin-left: 10px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        } 
+
+#div-dias-baixo{
+    width: 100%;
+    height: 20%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 4.3%;
+
+}
+    #dias-baixo{
+        width: 86.5%;
+        background-color: #f9dad8;
+        height: 100%;
+        display: flex;
+    }
+        #dia8{
+            height: 130px;
+            width: 160px;
+            background-color: rgb(243, 240, 240);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        #dia9{
+            height: 130px;
+            width: 160px;
+            background-color: rgb(243, 240, 240);
+            margin-left: 10px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        #dia10{
+            height: 130px;
+            width: 160px;
+            background-color: rgb(243, 240, 240);
+            margin-left: 10px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        #dia11{
+            height: 130px;
+            width: 160px;
+            background-color: rgb(243, 240, 240);
+            margin-left: 10px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        #dia12{
+            height: 130px;
+            width: 160px;
+            background-color: rgb(243, 240, 240);
+            margin-left: 10px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        #dia13{
+            height: 130px;
+            width: 160px;
+            background-color: rgb(243, 240, 240);
+            margin-left: 10px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        #dia14{
+            height: 130px;
+            width: 160px;
+            background-color: rgb(243, 240, 240);
+            margin-left: 10px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        } 
+ 
+#fim{
+width: 100%;
+height: 22%;
+}
+
+/* Barra de rolagem */
+
+::-webkit-scrollbar {
+    width: 10px;
+    height: 10px;
+    background-color: #f0f0f0;
+  }
+  
+  ::-webkit-scrollbar-thumb {
+    background-color: #0E816C;
+    border-radius: 5px;
+  }
+  
+  ::-webkit-scrollbar-thumb:hover {
+    background-color: #0E816C;
+  }
+  
+  ::-webkit-scrollbar-track {
+    background-color: #F9EAD8;
+  }

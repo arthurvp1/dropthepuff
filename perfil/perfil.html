@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Perfil</title>
+    <link rel="apple-touch-icon" sizes="180x180" href="./icone/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="./icone/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./icone/favicon-16x16.png">
+    <link rel="manifest" href="./icone/site.webmanifest">
+    <link rel="stylesheet" href="stylePerfil.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+</head>
+<body>
+    <div id="container">
+        <!-- HEADER -->
+        <div id="fixed-header">
+            <div id="logotipo">
+                <a href="../Homepage/homepage.html"> <img class="logo" src="../politica-privacidade/img/logotipo.webp"> </a>
+            </div>
+            <div id="vazioesquerda"></div>
+            <div id="buttons">
+                <a href="../loja/loja.html" style="cursor: pointer;"> <label>Loja</label> </a>
+                <a href="../rotina/rotina.html" style="cursor: pointer;"> <label>Rotina</label>   </a>
+                <a class="mudafundo" href="../perfil/perfil.html">     <label >     Meu perfil   </label>   </a>
+                <a href="../Homepage/homepage.html" style="cursor: pointer;">  <label>Sobre Nós</label>   </a>
+            </div>
+            <div id="vaziodireita"></div>
+        </div>
+        <!-- BODY -->
+        <div id="bodySite">
+            <div id="divEsquerda">
+                <div id="divInformacoes">
+                    <br>
+                    <label>Usuario</label><br>
+                    <input class="inptUser" type="text" id="inptUsername" disabled><br><br>
+                    <label>Informações do Perfil</label><br><br>
+                    <div id="nomes">
+                        <label>Primeiro Nome</label>
+                        <label>Ultimo Nome</label><br>
+                    </div>
+                    <div id="inptNomes">
+                        <input class="inptUserNome" type="text" placeholder="nome" id="inptFisrtName">
+                        <input class="inptUserNome" type="text" placeholder="sobrenome" id="inptLastName"><br><br>
+                    </div><br>
+                    <div id="ctts">
+                        <label>E-mail</label>
+                        <label id="cttsCelular">Senha</label><br>
+                    </div>
+                    <div id="inptCtts">
+                        <input class="inptUserCtts" type="text" placeholder="user@gmail.com" id="inptEmailPerfil">
+                        <input  class="inptUserCtts" type="password" placeholder="password" id="inptPasswordPerfil">
+                        <i class="bi bi-eye-fill" id="bttSenha" onclick="mostrarSenha()"></i><br><br>
+                    </div><br>
+                    <button id="botao-topo" onclick="SalvarPerfilUser()">Salvar</button>
+
+                    
+                </div>
+                <div id="divPreferencias">
+                    <label>Preferências da Rotina</label><br><br>
+                    <select id="preferenciadificuldade">
+                        <option value="1" selected>Fácil</option>
+                        <option value="2">Médio</option>
+                        <option value="3">Difícil</option>
+                    </select><br><br>
+
+                    <label>Quantidade de Vapes que você usa no mês *5k</label><br><br>
+                    <select id="qtdpods">
+                        <option value="1" selected>1</option>   
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                        <option value="6">6</option>
+                        <option value="7">7</option>
+
+                    </select>
+                    <!-- <input class="inptUserCtts" placeholder="Quantidade de Vapes">--><br><br>
+                    <button onclick="salvarPerfil()" id="botao-topo" >Salvar</button>
+                </div>
+            </div>
+
+            <div id="divDireita">
+
+                <div id="divPerfil">
+                    <div id="divImagem">
+                        <img id="imgPerfil" src="./img/user-icon-on-transparent-background-free-png.png" alt="">
+                    </div>
+                    <div id="divlblPerfil">
+                        <label id="usernamePerfil"></label>
+                        <label id="nomePerfil"></label>
+                        <label id="emailPerfil"></label>
+                    </div>
+                    <div id="divButtonPerfil">
+                        <a id="aPerfil" href="../login e cadastro/login.html" style="cursor: pointer;"><button  id="bttSair" class="buttonsSite">Sair da Conta</button></a>
+                        <button onclick="apagarConta()" id="bttPerfil" class="buttonsSite">Excluir Conta</button>
+                    </div>
+                </div>
+                <div id="divFoto">
+                    <label for="inplabel">Endereço da Imagem<br><br>
+
+                        <input id="inpImagem" type="text">
+                    </label>
+                    <button class="buttonsSite" onclick="trocarImagem()">Trocar Imagem</button>
+                    <label onclick="abrirModal()" id="aTutorial">Tutorial para trocar a imagem</label>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="janela-modal" id="janela-modal">
+    <div class="modal">
+        <button class="fechar" id="fechar">X</button>
+       <pre> # Upar imagem no ImgBB
+
+        https://pt-br.imgbb.com/
+                                
+        - Clica em 'Enviar';
+        - Clica e seleciona a imagem;
+        - Clica em 'Enviar';
+        - Clica na imagem;
+        - Na imagem completa, clica com o botão direito e seleciona 'copiar endereço da imagem';
+        - Coloque o endereço copiado em url e depois clique em trocar imagem.</pre>
+    </div>
+
+    <script src="perfil.js"></script>
+</body>
+</html>

@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Loja DropThePuff</title>
+    <link rel="stylesheet" href="loja.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,200..800;1,6..72,200..800&display=swap" rel="stylesheet">
+    <link rel="apple-touch-icon" sizes="180x180" href="./icone/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="./icone/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./icone/favicon-16x16.png">
+    <link rel="manifest" href="./icone/site.webmanifest">
+</head>
+<body>
+    <div id="container-principal">
+        <!--cabeçalho da pagina-->
+
+        <div id="fixed-header">
+            <div id="logotipo">
+                <a href="homepage.html"> <img class="logo" src="../politica-privacidade/img/logotipo.webp"> </a>
+            </div>
+            <div id="vazioesquerda">
+
+            </div>
+
+            <div id="buttons">
+                <a class="mudafundo" href="../loja/loja.html" style="cursor: pointer;"> <label>Loja</label> </a>
+                <a href="../rotina/rotina.html" style="cursor: pointer;"> <label>Rotina</label>   </a>
+                <a href="../perfil/perfil.html" style="cursor: pointer;">  <label>Meu perfil</label>   </a>
+                <a  href="../Homepage/homepage.html"><label>Sobre nós</label></a>
+            </div>
+
+            <div id="vaziodireita"></div>
+        </div>
+
+        <br><br><br><br><br><br>
+        <!--inicio do corpo da pagina-->
+        <div id="carrinho">
+            <img src="./imgs/lojaimg.png" alt="./imgs/lojaimg.png">
+        </div>
+        <div id="container-meio">
+
+
+            <!--esquerda da pagina-->
+
+            <div id="esquerda">
+                <div class="item">
+                    <img src="./imgs/transferir (1).webp" alt="ITEM 1" class="item-img">
+                    <div class="item-info">
+                        <p class="item-title">Lock The Puff</p>
+                        <p class="item-price">R$:40.00</p>
+                        <p class="item-quantidade">
+
+                            <select id="qtd1" onchange= "AttPagamento()">
+                                <option value="0" selected >Qtd: 0</option>
+                                <option value="1">Qtd: 1</option>
+                                <option value="2">Qtd: 2</option>
+                                <option value="3">Qtd: 3</option>
+                                <option value="4">Qtd: 4</option>
+                                <option value="5">Qtd: 5</option>
+
+                                </select>
+
+                        </p>
+                        
+                    </div>
+                    <i class="infoItem1">Transforme sua experiência de vaping com o nosso inovador Lock The Puff. Este dispositivo inteligente ajusta automaticamente a entrada de ar do seu vape de acordo com a sua rotina, oferecendo uma personalização sem precedentes para um vapor mais suave e controlado. Ideal para quem busca um vaping mais saudável e adaptado ao seu estilo de vida.</i>
+                </div>
+                <div class="item">
+                    <img src="./imgs/lock-mini.png" alt="ITEM 2" class="item-img">
+                    <div class="item-info">
+                        <p class="item-title">Mini lock The Puff</p>
+                        <p class="item-price">R$:30.00</p>
+                        <p class="item-quantidade">
+
+                            <select id="qtd2" onchange= "AttPagamento()">
+                                <option value="0" selected >Qtd: 0</option>
+                                <option value="1">Qtd: 1</option>
+                                <option value="2">Qtd: 2</option>
+                                <option value="3">Qtd: 3</option>
+                                <option value="4">Qtd: 4</option>
+                                <option value="5">Qtd: 5</option>
+
+                                </select>
+
+                        </p>
+                        
+                    </div>
+                    <i class="infoItem1">Desenvolvido especialmente para vapers menores, esta versão compacta oferece o mesmo controle preciso de fluxo de ar, ajustando-se automaticamente à sua rotina. Perfeito para quem usa dispositivos mais portáteis sem abrir mão da saúde.</i>
+                </div>
+                <div class="item">
+                    <img src="./imgs/transferir (1).png" alt="ITEM 3" class="item-img">
+                    <div class="item-info">
+                        <p class="item-title">Duo lock The Puff</p>
+                        <p class="item-price">R$:65.00</p>
+                        <p class="item-quantidade">
+
+                            <select id="qtd3" onchange= "AttPagamento()">
+                                <option value="0" selected >Qtd: 0</option>
+                                <option value="1">Qtd: 1</option>
+                                <option value="2">Qtd: 2</option>
+                                <option value="3">Qtd: 3</option>
+                                <option value="4">Qtd: 4</option>
+                                <option value="5">Qtd: 5</option>
+
+                                </select>
+
+                        </p>
+                        
+                    </div>
+                    <i class="infoItem1">Adquira o combo completo e tenha o melhor dos dois mundos! Inclui o Lock The Puff para vape padrão e a versão para mini vapes. Aproveite a versatilidade e conveniência, garantindo uma vida mais saudavel e livramento do vape</i>
+                </div>
+            </div>
+            <div id="direita">
+                <div id="resumo">
+                    <h2>Carrinho</h2>
+                    <div class="resumo-item">
+                        <span>Subtotal</span>
+                        <span class="Rs">R$</span>
+                        <label id="subtotal">00.00</labe>
+                    </div>
+                    <div class="resumo-item">
+                        <span>Frete</span>
+                        <span class="Rs">R$</span>
+                        <label id="shipping">10.00</label>
+                    </div>
+                    <div class="resumo-item">
+                        <span>Taxa</span>
+                        <span class="Rs">R$</span>
+                        <label id="tax">2.00</label>
+                    </div>
+                    <div class="resumo-item total">
+                        <span>Total</span>
+                        <span class="Rs">R$</span>
+                        <label id="total">12.00</label>
+                    </div>
+                    <button id="checkout-button" onclick="Pagamento()">Continuar com o Pagamento</button>
+                </div>
+                <div id="espacamento-resumo"></div>
+            </div>
+        </div>
+        <div id="espacamento-pagina"></div>
+    </div>
+    <br><br><br>
+    <script src="loja.js"></script>
+</body>
+</html>
